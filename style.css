@@ -1,0 +1,401 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Bai Jamjuree", sans-serif;
+}
+.container-flex {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100%;
+}
+/* HEADER */
+.container-item-1 {
+  display: flex;
+  width: 100%;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  background-image: url(./images/bg-header-desktop.png);
+  background-size: cover;
+  background-position: center;
+  padding-block: 65px;
+  margin-block-end: 5rem;
+}
+.container-item-1-text {
+  max-width: 500px;
+  margin-inline: 25px;
+}
+.container-item-1-text h1 {
+  margin-block: 15px;
+  font-weight: 600;
+  color: hsl(210, 10%, 33%);
+  text-align: center;
+}
+.container-item-1-text p {
+  margin-block: 15px;
+  font-weight: 400;
+  color: hsl(201, 11%, 66%);
+  text-align: center;
+}
+.container-item-1-btn {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 15px;
+}
+.container-item-1-btn button:first-child {
+  border: none;
+  background-color: hsl(171, 66%, 44%);
+  color: white;
+  padding: 12px 30px;
+  box-shadow: 0 4px hsl(171, 44%, 25%);
+  border-radius: 40px;
+  cursor: pointer;
+  transition: 0.1s;
+}
+.container-item-1-btn button:last-child {
+  border: none;
+  background-color: hsl(233, 100%, 69%);
+  color: white;
+  padding: 12px 25px;
+  box-shadow: 0 4px hsl(233, 45%, 39%);
+  border-radius: 40px;
+  cursor: pointer;
+  transition: 0.1s;
+}
+.container-item-1-btn button:first-child:active {
+  box-shadow: 0 4px hsl(171, 44%, 25%);
+  background-color: hsl(171, 44%, 25%);
+  transform: translateY(4px);
+}
+.container-item-1-btn button:last-child:active {
+  box-shadow: 0 2px hsl(233, 45%, 46%);
+  background-color: hsl(233, 45%, 39%);
+  transform: translateY(4px);
+}
+
+/* SECTION 1 */
+.container-item-2 {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  margin-block-end: 5rem;
+}
+.container-item-2-text {
+  max-width: 625px;
+  margin-block-end: 5rem;
+}
+.container-item-2-text h2 {
+  margin-block: 15px;
+  font-weight: 600;
+  color: hsl(210, 10%, 33%);
+  text-align: center;
+}
+.container-item-2-text p {
+  margin-block: 15px;
+  font-weight: 400;
+  color: hsl(201, 11%, 66%);
+  text-align: center;
+  font-size: 18px;
+}
+.container-item-2-main {
+  display: flex;
+  align-items: center;
+}
+.image-computer {
+  position: relative;
+  left: -8rem;
+  width: auto;
+}
+.container-item-2-main-text {
+  max-width: 400px;
+}
+.container-item-2-main-text h3 {
+  font-weight: 600;
+  color: hsl(210, 10%, 33%);
+  text-align: justify;
+  margin-block: 10px;
+}
+.container-item-2-main-text p {
+  font-weight: 400;
+  color: hsl(201, 11%, 66%);
+  text-align: justify;
+  font-size: 18px;
+  line-height: 1.5;
+  margin-block-end: 4rem;
+}
+
+/* SECTION 2 */
+.container-item-3 {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  margin-block-end: 4.5rem;
+}
+.container-item-3 img {
+  margin-block-start: 20px;
+  width: 63%;
+}
+
+.container-item-3-text h2 {
+  font-weight: 600;
+  color: hsl(210, 10%, 33%);
+  text-align: center;
+  margin-block: 15px;
+}
+.container-item-3-text p {
+  font-weight: 400;
+  color: hsl(201, 11%, 66%);
+  text-align: center;
+  line-height: 1.5;
+  margin-block-end: 30px;
+}
+/* SECTION 3 */
+.container-item-4 {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  margin-block-end: 5rem;
+}
+.container-item-4-text h2 {
+  font-weight: 600;
+  color: hsl(210, 10%, 33%);
+  text-align: center;
+  margin-block: 15px;
+}
+.container-item-4-text p {
+  font-weight: 400;
+  color: hsl(201, 11%, 66%);
+  text-align: center;
+  line-height: 1.5;
+  margin-block-end: 30px;
+}
+.container-item-4-main {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  margin-block: 3rem;
+}
+.container-item-4-main > div {
+  max-width: 400px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  text-align: center;
+  padding: 15px;
+}
+.container-item-4-main > div h3 {
+  font-weight: 600;
+  color: hsl(210, 10%, 33%);
+  text-align: center;
+  margin-block: 20px;
+}
+.container-item-4-main > div p {
+  font-weight: 400;
+  color: hsl(201, 11%, 66%);
+}
+/* SVG HOVER STYLE */
+.svg {
+  transition: 0.1s;
+}
+.svg:hover {
+  stroke: #050505;
+  fill: #050505;
+  transform: translateY(-4px);
+}
+
+/* SECTION 4 */
+.container-item-5 {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  margin-block: 8rem;
+}
+
+/* SECTION 5 */
+.container-item-6 {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  margin-block-end: 5rem;
+}
+.container-item-6-text {
+  max-width: 600px;
+  margin-block-end: 2rem;
+}
+.container-item-6-text h2 {
+  font-weight: 600;
+  color: hsl(210, 10%, 33%);
+  text-align: center;
+  margin-block: 15px;
+}
+.container-item-6-text p {
+  font-weight: 400;
+  color: hsl(201, 11%, 66%);
+  text-align: center;
+  line-height: 1.5;
+  margin-block-end: 30px;
+}
+/* FOOTER */
+.container-item-7 {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.container-item-7 > div:first-child {
+  flex: 2;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  column-gap: 8rem;
+  padding: 10px;
+}
+.container-item-7 > div:last-child {
+  flex: 1;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  column-gap: 2rem;
+}
+.grid-links {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: auto;
+  column-gap: 5rem;
+  row-gap: 1rem;
+}
+.grid-links a {
+  text-decoration: none;
+  font-weight: 400;
+  color: hsl(210, 10%, 33%);
+  text-align: justify;
+  transition: 0.1s;
+  font-size: 18px;
+}
+.grid-links a:hover {
+  color: #0daf97;
+}
+.container-item-7 .container-item-7-svg {
+  transition: 0.1s ease-out;
+}
+.container-item-7 .container-item-7-svg:nth-of-type(1):hover {
+  stroke: #3b5998;
+  fill: #3b5998;
+  transform: translateY(-4px);
+  cursor: pointer;
+}
+.container-item-7 .container-item-7-svg:nth-of-type(2):hover {
+  stroke: #1da1f2;
+  fill: #1da1f2;
+  transform: translateY(-4px);
+  cursor: pointer;
+}
+.container-item-7 .container-item-7-svg:nth-of-type(3):hover {
+  stroke: #c13584;
+  fill: #c13584;
+  transform: translateY(-4px);
+  cursor: pointer;
+}
+
+/* MEDIA QUERY FOR MOBILE */
+
+@media (max-width: 900px) {
+  h1 {
+    font-size: 22px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  h3 {
+    font-size: 18px;
+  }
+  p {
+    font-size: 15px;
+  }
+  /* HEADER RESPONSIVE*/
+  .container-item-1 {
+    background-image: url(./images/bg-header-mobile.png);
+    background-size: cover;
+    background-position: center;
+    margin-block-end: 1rem;
+    margin-inline: 10px;
+  }
+  .container-item-1-btn {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    gap: 15px;
+    width: 60%;
+  }
+
+  /* SECTION 1 RESPONSIVE */
+  .container-item-2-main {
+    display: flex;
+    flex-flow: column;
+  }
+  .container-item-2-text {
+    max-width: 350px;
+    margin-block-end: 3rem;
+  }
+  .image-computer {
+    position: relative;
+    left: initial;
+    width: 70%;
+    margin-block-end: 10px;
+  }
+  .container-item-2-main-text {
+    text-align: center;
+    margin-left: 10px;
+  }
+  .container-item-3-text {
+    margin-left: 10px;
+  }
+  .container-item-2-main-text h3 {
+    text-align: center;
+  }
+  .container-item-2-main-text p {
+    text-align: center;
+    font-size: 15px;
+  }
+  /* SECTION 3 RESPONSIVE*/
+  .container-item-4-main {
+    flex-flow: column nowrap;
+    margin-block-start: 1rem;
+    margin-block-end: 0;
+  }
+  .container-item-4 {
+    margin: 0;
+  }
+  /* SECTION 4 RESPONSIVE */
+  .container-item-5 {
+    flex-flow: column nowrap;
+    align-items: center;
+    gap: 3rem;
+    margin-block: 6rem;
+  }
+  /* SECTION 5 RESPONSIVE */
+  .container-item-6-text {
+    margin-left: 10px;
+  }
+  /* FOOTER RESPONSIVE */
+  .container-item-7 {
+    flex-flow: column nowrap;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  .container-item-7 > div:first-child {
+    flex-flow: column wrap;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  .grid-links {
+    grid-template-columns: 300px;
+    justify-items: center;
+    gap: 1.5rem;
+  }
+}
